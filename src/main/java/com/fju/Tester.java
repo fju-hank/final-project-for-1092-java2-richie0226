@@ -1,29 +1,55 @@
 package com.fju;
 
-import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Tester {
     public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-
-                int h1=scanner.nextInt();
-                int m1=scanner.nextInt();
-                int tm1=h1*60+m1;
-                int h2=scanner.nextInt();
-                int m2=scanner.nextInt();
-                int tm2=h2*60+m2;
-                int tm=tm2-tm1;
-                int money=0;
-                if(tm>=240){
-                    money=30*4+40*4+(tm-240)/30*60;
-                }else if (tm>=120){
-                    money=30*4+(tm-120)/30*40;
-                }else{
-                    money=tm/30*30;
-                }
-                System.out.println("從"+ h1 +" 點 "+ m1 +"分停到"+ h2 +" 點 "+ m2 +"分,共需繳交的停車費: " + money + " 元");
-                scanner.close();
-
-            }
-
+        int fee = 30;
+        Map<String, Car> cars = new HashMap<>();
+        Car c1 = new Car("abc-123", "07:30");
+        Car c2 = new Car("xyz-123", "09:45");
+        Car c3 = new Car("ghi-123", "10:30");
+        cars.put(c1.id, c1);
+        cars.put(c2.id, c2);
+        cars.put(c3.id, c3);
+        String id = "abc-123";
+        Car car = cars.get(id);
+        if (car == null) {
+            System.out.println("Car not found");
+        } else {
+            Date now = new Date();
+            long ms = now.getTime() - car.getEnter().getTime();
+            long mins = ms/(1000*60);
+            System.out.println(mins);
         }
+
+
+//        practice();
+    }
+
+    private static void practice() {
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        try {
+            Date d = sdf.parse("08:58");
+            System.out.println(d);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        //
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 8);
+        cal.set(Calendar.MINUTE, 30);
+
+        System.out.println(cal.getTime());
+
+        Car c1 = new Car("abc-123");
+        Car c2 = new Car("xyz-888", "07:30");
+        System.out.println(c1.getEnter());
+        Date now = new Date();
+        System.out.println(now.getTime());
+        long dis = now.getTime() - c1.getEnter().getTime();
+        System.out.println(dis);
+    }
+}
