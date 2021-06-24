@@ -1,6 +1,8 @@
 package com.fju;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Panel extends Thread {
     static final int WIDTH = 600;
@@ -29,6 +31,12 @@ public class Panel extends Thread {
         frame.add(button5, BorderLayout.CENTER);
         button5.setForeground(Color.YELLOW);
         button5.setBackground(Color.BLACK);
+        Font f=new Font(" ",Font.BOLD,20);
+        button1.setFont(f);
+        button2.setFont(f);
+        button3.setFont(f);
+        button4.setFont(f);
+        button5.setFont(f);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 

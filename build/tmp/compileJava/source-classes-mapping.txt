@@ -9,11 +9,13 @@ com/fju/Tester.java
  com.fju.Tester
 com/fju/Panel.java
  com.fju.Panel
+com/fju/Button.java
+ com.fju.Button
 com/fju/ParkingTester.java
  com.fju.ParkingTester
-com/fju/TollButton.java
- com.fju.TollButton
-com/fju/Car.java
- com.fju.Car
 com/fju/MapTester.java
  com.fju.MapTester
+com/fju/Car.java
+ com.fju.Car
+com/fju/Clock.java
+ com.fju.Clock
