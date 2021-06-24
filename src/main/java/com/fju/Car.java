@@ -6,13 +6,15 @@ import java.util.Date;
 
 public class Car {
     String id;
+    String lastname;
     private Date enter;
 
-    public Car(String id) {
+    public Car(String id, String lastname) {
         this.id = id;
+        this.lastname = lastname;
         enter = new Date();
     }
-    public Car(String id, String time) {
+    public Car(String id, String lastname, String time) {
         this.id = id;
         //"07:30"
         Calendar now = Calendar.getInstance();

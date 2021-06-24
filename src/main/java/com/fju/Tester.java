@@ -8,9 +8,9 @@ public class Tester {
     public static void main(String[] args) {
         int fee = 30;
         Map<String, Car> cars = new HashMap<>();
-        Car c1 = new Car("abc-123", "07:30");
-        Car c2 = new Car("xyz-123", "09:45");
-        Car c3 = new Car("ghi-123", "10:30");
+        Car c1 = new Car("abc-123","Kris", "06:45");
+        Car c2 = new Car("xyz-123","Bob", "07:30");
+        Car c3 = new Car("ghi-123", "Jack","10:30");
         cars.put(c1.id, c1);
         cars.put(c2.id, c2);
         cars.put(c3.id, c3);
@@ -44,8 +44,8 @@ public class Tester {
 
         System.out.println(cal.getTime());
 
-        Car c1 = new Car("abc-123");
-        Car c2 = new Car("xyz-888", "07:30");
+        Car c1 = new Car("abc-123","Kris","06:40");
+        Car c2 = new Car("xyz-888", "Chen","07:30");
         System.out.println(c1.getEnter());
         Date now = new Date();
         System.out.println(now.getTime());
