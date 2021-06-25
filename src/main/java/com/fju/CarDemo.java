@@ -3,7 +3,10 @@ package com.fju;
 import javax.swing.*;
 
 public class CarDemo {
-    private JPanel mainPanel = new JPanel();
+    private JPanel mainPanel;
+    private JTextField textField;
+    private JButton button1;
+    private JPanel  northPanel;
     String name;
 
     public static void main(String[] args) {

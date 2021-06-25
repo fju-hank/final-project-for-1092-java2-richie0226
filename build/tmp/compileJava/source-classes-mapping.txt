@@ -1,18 +1,20 @@
-com/fju/Tester.java
- com.fju.Tester
-com/fju/db/Tester.java
- com.fju.db.Tester
-com/fju/CarDemo.java
- com.fju.CarDemo
 com/fju/Input.java
  com.fju.Input
+com/fju/db/Tester.java
+ com.fju.db.Tester
+com/fju/Clock.java
+ com.fju.Clock
+com/fju/Tester.java
+ com.fju.Tester
 com/fju/Panel.java
  com.fju.Panel
-com/fju/Car.java
- com.fju.Car
 com/fju/ParkingTester.java
  com.fju.ParkingTester
 com/fju/MapTester.java
  com.fju.MapTester
-com/fju/Clock.java
- com.fju.Clock
+com/fju/Car.java
+ com.fju.Car
+com/fju/CarDemo.java
+ com.fju.CarDemo
+com/fju/Comment.java
+ com.fju.Comment
