@@ -3,7 +3,7 @@ package com.fju;
 import javax.swing.*;
 import java.awt.*;
 import java.util.*; //要使用到 Calendar 等...
-public class Clock {
+public class Clock extends Panel {
     static Frame frm=new Frame("Time");
     static Label lab=new Label("");
     static Calendar calendar = new GregorianCalendar();  //建立一個 Calendar
@@ -15,10 +15,12 @@ public class Clock {
         frm.setSize(400,300);                // 設定視窗的長為200、寬為150個像素
         frm.setBackground(Color.yellow);  // 設定黃色的背景
         frm.setLocation(250,250);             // 設定視窗的位置
-        lab.setBounds(25,65,300,200);      // 設定標籤的位置
+        lab.setBounds(50,65,300,200);      // 設定標籤的位置
         lab.setBackground(Color.WHITE);    // 設定標籤的顏色
         frm.add(lab);                          // 將標籤物件lab加入視窗中
-        frm.setVisible(true);             // 將視窗顯示出來
+        frm.setVisible(true); // 將視窗顯示出來
+        Font f=new Font(" ",Font.BOLD,20);
+        lab.setFont(f);
     }
 
     private void setTime()  //設定系統時間
@@ -61,9 +63,10 @@ public class Clock {
         while(true)
         {
             setTime();
-            lab.setText(getYear()+"年"+getMonth()+"月"+
-                    getDate()+"日"+getHour()+"時"+
-                    getMinute()+"分"+getSecond()+"秒");
+            lab.setText(getYear()+"/"+getMonth()+"/"+
+                    getDate()+"/"+getHour()+":"+
+                    getMinute()+":"+getSecond());
+
         }
     }
 

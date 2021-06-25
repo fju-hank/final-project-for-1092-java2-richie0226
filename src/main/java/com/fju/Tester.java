@@ -3,9 +3,11 @@ package com.fju;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.Scanner;
 
-public class Tester {
+public class Tester extends Thread {
     public static void main(String[] args) {
+
         int fee = 30;
         Map<String, Car> cars = new HashMap<>();
         Car c1 = new Car("abc-123","Kris", "06:45");
@@ -29,7 +31,7 @@ public class Tester {
 //        practice();
     }
 
-    private static void practice() {
+    public static void practice() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         try {
             Date d = sdf.parse("08:58");
@@ -43,13 +45,18 @@ public class Tester {
         cal.set(Calendar.MINUTE, 30);
 
         System.out.println(cal.getTime());
-
-        Car c1 = new Car("abc-123","Kris","06:40");
-        Car c2 = new Car("xyz-888", "Chen","07:30");
+        Car c1 = new Car("abc-123","Kris","06:45");
+        Car c2 = new Car("xyz-888", "Bob","07:30");
         System.out.println(c1.getEnter());
         Date now = new Date();
         System.out.println(now.getTime());
         long dis = now.getTime() - c1.getEnter().getTime();
         System.out.println(dis);
+
+
+
     }
 }
+
+
+

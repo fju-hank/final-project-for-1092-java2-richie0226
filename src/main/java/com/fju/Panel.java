@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Panel extends Thread {
+public class Panel  {
     static final int WIDTH = 600;
 
     public static void main(String[] args) {
