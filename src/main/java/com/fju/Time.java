@@ -8,9 +8,9 @@ public class Time {
     static Calendar calendar = new GregorianCalendar();  //建立一個 Calendar
     public static void main(String [] args) {
         showWindow();
-        Time clock = new Time();
+        Time time = new Time();
 
-        clock.showCurrentTime();
+        time.showCurrentTime();
     }
 
     public static void showWindow(){
@@ -19,11 +19,11 @@ public class Time {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLayout(null);                 // 取消視窗的版面設定
         frame.setBackground(Color.YELLOW);  // 設定黃色的背景
-        lab.setBounds(100,100,350,350);      // 設定標籤的位置
+        lab.setBounds(100,100,300,200);      // 設定標籤的位置
         lab.setBackground(Color.WHITE);    // 設定標籤的顏色
         frame.add(lab);                          // 將標籤物件lab加入視窗中
         frame.setVisible(true); // 將視窗顯示出來
-        Font f=new Font(" ",Font.BOLD,40);
+        Font f=new Font(" ",Font.BOLD,30);
         lab.setFont(f);
 
     }

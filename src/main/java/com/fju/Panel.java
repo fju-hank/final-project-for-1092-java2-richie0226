@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 public class Panel  {
     static final int WIDTH = 600;
-    private JButton button1;
 
     public static void main(String[] args) {
         showWindow();
@@ -21,9 +20,9 @@ public class Panel  {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                frame.setVisible(false);
-                Time clock = new Time();
-                clock.showWindow();
+                frame.setVisible(true);
+                Time time = new Time();
+                time.showWindow();
 
             }
         });
@@ -39,7 +38,27 @@ public class Panel  {
             }
         });
         JButton button3 = new JButton("HELP");
+        //frame.getContentPane().add(button1);
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                frame.setVisible(false);
+                Help help = new Help();
+                Help.showWindow();
+
+            }
+        });
         JButton button4 = new JButton("COMMENT");
+        //frame.getContentPane().add(button1);
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                frame.setVisible(false);
+                Comment comment = new Comment();
+                comment.showWindow();
+
+            }
+        });
         JButton button5 = new JButton("TOUCH TO START");
         frame.add(button1, BorderLayout.NORTH);
         button1.setForeground(Color.YELLOW);
