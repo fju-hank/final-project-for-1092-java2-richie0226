@@ -2,20 +2,23 @@ com/fju/Input.java
  com.fju.Input
 com/fju/db/Tester.java
  com.fju.db.Tester
+com/fju/Time.java
+ com.fju.Time
 com/fju/CarDemo.java
  com.fju.CarDemo
 com/fju/Tester.java
  com.fju.Tester
-com/fju/Panel.java
- com.fju.Panel
- com.fju.Panel$1
+com/fju/Comment.java
+ com.fju.Comment
 com/fju/ParkingTester.java
  com.fju.ParkingTester
 com/fju/MapTester.java
  com.fju.MapTester
 com/fju/Car.java
  com.fju.Car
-com/fju/Comment.java
- com.fju.Comment
-com/fju/Clock.java
- com.fju.Clock
+com/fju/Panel.java
+ com.fju.Panel
+ com.fju.Panel$1
+ com.fju.Panel$2
+com/fju/EmergencyCall.java
+ com.fju.EmergencyCall

@@ -3,27 +3,27 @@ package com.fju;
 import javax.swing.*;
 import java.awt.*;
 import java.util.*; //要使用到 Calendar 等...
-public class Clock {
-    static Label lab=new Label("");
+public class Time {
+    static Label lab=new Label();
     static Calendar calendar = new GregorianCalendar();  //建立一個 Calendar
     public static void main(String [] args) {
         showWindow();
-        Clock clo1 = new Clock();
+        Time clock = new Time();
 
-        clo1.showCurrentTime();
+        clock.showCurrentTime();
     }
 
     public static void showWindow(){
         JFrame frame = new JFrame();
-        frame.setBounds(100,100,465,315);// 設定視窗的長為200、寬為150個像素// 設定視窗的位置
+        frame.setBounds(100,100,500,400);// 設定視窗的長為500、寬為400個像素// 設定視窗的位置
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLayout(null);                 // 取消視窗的版面設定
-        frame.setBackground(Color.yellow);  // 設定黃色的背景
-        lab.setBounds(50,65,300,200);      // 設定標籤的位置
+        frame.setBackground(Color.YELLOW);  // 設定黃色的背景
+        lab.setBounds(100,100,350,350);      // 設定標籤的位置
         lab.setBackground(Color.WHITE);    // 設定標籤的顏色
         frame.add(lab);                          // 將標籤物件lab加入視窗中
         frame.setVisible(true); // 將視窗顯示出來
-        Font f=new Font(" ",Font.BOLD,20);
+        Font f=new Font(" ",Font.BOLD,40);
         lab.setFont(f);
 
     }

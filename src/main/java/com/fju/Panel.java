@@ -1,7 +1,6 @@
 package com.fju;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.desktop.OpenFilesHandler;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,20 +13,31 @@ public class Panel  {
     }
 
     public static void showWindow(){
-        JFrame frame = new JFrame("PANEL");
+        JFrame frame = new JFrame("Panel");
         frame.setSize(WIDTH, 400);
-        frame.setLocation(1000, 200);
+        frame.setLocation(100, 200);
         JButton button1 = new JButton("TIME");
+        //frame.getContentPane().add(button1);
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 frame.setVisible(false);
-                Clock clock = new Clock();
+                Time clock = new Time();
                 clock.showWindow();
 
             }
         });
         JButton button2 = new JButton("EMERGENCY CALL");
+        //frame.getContentPane().add(button1);
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                frame.setVisible(false);
+                EmergencyCall emergencyCall = new EmergencyCall();
+                emergencyCall.showWindow();
+
+            }
+        });
         JButton button3 = new JButton("HELP");
         JButton button4 = new JButton("COMMENT");
         JButton button5 = new JButton("TOUCH TO START");
