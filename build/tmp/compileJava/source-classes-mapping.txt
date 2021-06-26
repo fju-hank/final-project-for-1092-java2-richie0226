@@ -6,22 +6,8 @@ com/fju/Comment.java
  com.fju.Comment
 com/fju/Time.java
  com.fju.Time
-com/fju/CarDemo.java
- com.fju.CarDemo
 com/fju/Tester.java
  com.fju.Tester
-com/fju/EmergencyCall.java
- com.fju.EmergencyCall
-com/fju/ParkingTester.java
- com.fju.ParkingTester
-com/fju/MapTester.java
- com.fju.MapTester
-com/fju/Car.java
- com.fju.Car
-com/fju/Help.java
- com.fju.Help
-com/fju/Start.java
- com.fju.Start
 com/fju/Panel.java
  com.fju.Panel
  com.fju.Panel$1
@@ -29,3 +15,17 @@ com/fju/Panel.java
  com.fju.Panel$3
  com.fju.Panel$4
  com.fju.Panel$5
+com/fju/EmergencyCall.java
+ com.fju.EmergencyCall
+com/fju/ParkingTester.java
+ com.fju.ParkingTester
+com/fju/Car.java
+ com.fju.Car
+com/fju/Start.java
+ com.fju.Start
+com/fju/Help.java
+ com.fju.Help
+com/fju/Worker.java
+ com.fju.Worker
+com/fju/Counter.java
+ com.fju.Counter
