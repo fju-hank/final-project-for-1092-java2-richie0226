@@ -49,7 +49,7 @@ public class Panel  {
             }
         });
         JButton button4 = new JButton("COMMENT");
-        //frame.getContentPane().add(button1);
+        frame.getContentPane().add(button1);
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {

@@ -4,6 +4,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Scanner;
+
+import static javax.swing.JButton.*;
+
 public class Comment implements ActionListener {
 
     JFrame frame;
@@ -62,6 +65,10 @@ public class Comment implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e){
+        if(e.getSource()==jt || e.getSource() == jButton){
+            System.out.println(jt.getText());
+            jt.setText("");
+        }
 
     }
 }
