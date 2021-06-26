@@ -16,13 +16,13 @@ com/fju/MapTester.java
  com.fju.MapTester
 com/fju/Car.java
  com.fju.Car
-com/fju/Comment.java
- com.fju.Comment
+com/fju/Help.java
+ com.fju.Help
 com/fju/Panel.java
  com.fju.Panel
  com.fju.Panel$1
  com.fju.Panel$2
  com.fju.Panel$3
  com.fju.Panel$4
-com/fju/Help.java
- com.fju.Help
+com/fju/Comment.java
+ com.fju.Comment
