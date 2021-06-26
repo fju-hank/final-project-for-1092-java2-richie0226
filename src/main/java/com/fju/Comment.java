@@ -11,11 +11,12 @@ public class Comment implements ActionListener {
 
     JFrame frame;
     JTextField jt;
-    JButton jButton;public static void main(String[] args) {
+    JButton jButton;
+    public static void main(String[] args) {
         showWindow();
     }
     public static void showWindow() {
-        JFrame frame = new JFrame("Panel");
+        /*JFrame frame = new JFrame("Panel");
         frame.setBounds(100,100,500,400);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.getContentPane().setLayout(null);
@@ -25,7 +26,7 @@ public class Comment implements ActionListener {
         label.setFont(new Font("Tahoma",Font.PLAIN,25));
         label.setBounds(40,110,500,100);
         frame.getContentPane().add(label);
-        frame.setVisible(true);
+        frame.setVisible(true);*/
     }
 
 
@@ -44,6 +45,7 @@ public class Comment implements ActionListener {
 
     jButton = new JButton("Enter");
     jButton.setBounds(150,300,100,60);
+    jButton.addActionListener(this);
     jButton.setBackground(new Color(125,125,125));
     jButton.setFont(new Font("Comic Sans",Font.ITALIC,15));
     jButton.setForeground(new Color(250,250,250));

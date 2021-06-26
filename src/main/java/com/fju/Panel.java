@@ -16,7 +16,7 @@ public class Panel  {
         frame.setSize(WIDTH, 400);
         frame.setLocation(100, 200);
         JButton button1 = new JButton("TIME");
-        //frame.getContentPane().add(button1);
+        frame.getContentPane().add(button1);
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -27,7 +27,7 @@ public class Panel  {
             }
         });
         JButton button2 = new JButton("EMERGENCY CALL");
-        //frame.getContentPane().add(button1);
+        frame.getContentPane().add(button2);
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -38,7 +38,7 @@ public class Panel  {
             }
         });
         JButton button3 = new JButton("HELP");
-        //frame.getContentPane().add(button1);
+        frame.getContentPane().add(button3);
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -49,7 +49,7 @@ public class Panel  {
             }
         });
         JButton button4 = new JButton("COMMENT");
-        frame.getContentPane().add(button1);
+        frame.getContentPane().add(button4);
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -60,6 +60,16 @@ public class Panel  {
             }
         });
         JButton button5 = new JButton("TOUCH TO START");
+        frame.getContentPane().add(button5);
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                frame.setVisible(false);
+                Start start = new Start();
+                start.showWindow();
+
+            }
+        });
         frame.add(button1, BorderLayout.NORTH);
         button1.setForeground(Color.YELLOW);
         button1.setBackground(Color.BLACK);
