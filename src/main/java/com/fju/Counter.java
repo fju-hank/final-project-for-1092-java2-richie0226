@@ -18,8 +18,8 @@ public class Counter {
         System.out.print("Total time: ");
         System.out.println(endTime-startTime+" ms");
         Map<String, String> customers = new HashMap<>();
-        customers.put("001", "Zoe");
-        customers.put("005", "Frank");
+        customers.put("001", "Kris");
+        customers.put("005", "Bob");
         customers.put("007", "Adam");
         customers.put("011", "Sandy");
         String name = customers.get("001");

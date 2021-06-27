@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class ParkingTester {
+public class Parking {
     public static void main(String[] args) {
         try {
             URL url = new URL("http://odws.hccg.gov.tw/001/Upload/25/OpenData/9059/452/7f02e869-396b-480c-b93f-f62cf67b0f7c.json");
@@ -18,7 +18,7 @@ public class ParkingTester {
             StringBuffer sb = new StringBuffer();
             String line = in.readLine();
             while(line != null) {
-//                System.out.println(line);
+                System.out.println(line);
                 sb.append(line);
                 line = in.readLine();
             }
