@@ -31,7 +31,7 @@ com/fju/Car.java
  com.fju.Car
 com/fju/Comment.java
  com.fju.Comment
-com/fju/db/Tester.java
- com.fju.db.Tester
 com/fju/Parking.java
  com.fju.Parking
+com/fju/db/DBTester.java
+ com.fju.db.DBTester
