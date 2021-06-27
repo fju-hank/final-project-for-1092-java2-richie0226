@@ -43,7 +43,7 @@ public class Comment implements ActionListener {
     jt.setBounds(50,70,300,200);
 
 
-    jButton = new JButton("Enter");
+    jButton = new JButton("Submit");
     jButton.setBounds(150,300,100,60);
     jButton.addActionListener(this);
     jButton.setBackground(new Color(125,125,125));
