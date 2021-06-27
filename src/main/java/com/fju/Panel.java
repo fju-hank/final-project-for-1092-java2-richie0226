@@ -3,15 +3,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.SQLOutput;
 
-public class Panel  {
+public class Panel {
     static final int WIDTH = 600;
 
     public static void main(String[] args) {
         showWindow();
     }
 
-    public static void showWindow(){
+    public static void showWindow() {
         JFrame frame = new JFrame("Panel");
         frame.setSize(WIDTH, 400);
         frame.setLocation(100, 200);
@@ -23,6 +27,7 @@ public class Panel  {
                 frame.setVisible(true);
                 Time time = new Time();
                 time.showWindow();
+                time.showCurrentTime();
 
             }
         });
@@ -31,7 +36,7 @@ public class Panel  {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                frame.setVisible(false);
+                frame.setVisible(true);
                 EmergencyCall emergencyCall = new EmergencyCall();
                 emergencyCall.showWindow();
 
@@ -42,7 +47,7 @@ public class Panel  {
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                frame.setVisible(false);
+                frame.setVisible(true);
                 Help help = new Help();
                 Help.showWindow();
 
@@ -53,7 +58,7 @@ public class Panel  {
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                frame.setVisible(false);
+                frame.setVisible(true);
                 Comment comment = new Comment();
                 comment.showWindow();
 
@@ -64,7 +69,7 @@ public class Panel  {
         button5.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                frame.setVisible(false);
+                frame.setVisible(true);
                 Start start = new Start();
                 start.showWindow();
 
@@ -85,7 +90,7 @@ public class Panel  {
         frame.add(button5, BorderLayout.CENTER);
         button5.setForeground(Color.YELLOW);
         button5.setBackground(Color.BLACK);
-        Font f=new Font(" ",Font.BOLD,20);
+        Font f = new Font(" ", Font.BOLD, 20);
         button1.setFont(f);
         button2.setFont(f);
         button3.setFont(f);
@@ -95,5 +100,5 @@ public class Panel  {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         JButton button = new JButton("New Frame");
     }
-
 }
+
