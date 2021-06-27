@@ -33,5 +33,5 @@ com/fju/Comment.java
  com.fju.Comment
 com/fju/db/Tester.java
  com.fju.db.Tester
-com/fju/ParkingTester.java
- com.fju.ParkingTester
+com/fju/Parking.java
+ com.fju.Parking
