@@ -29,6 +29,9 @@ public class Car  {
 
     }
 
+    public Car() {
+    }
+
     public Date getEnter() {
         return enter;
     }

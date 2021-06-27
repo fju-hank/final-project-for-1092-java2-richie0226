@@ -25,9 +25,12 @@ public class Panel {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 frame.setVisible(true);
+                //frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 Time time = new Time();
                 time.showWindow();
                 time.showCurrentTime();
+
+
 
             }
         });

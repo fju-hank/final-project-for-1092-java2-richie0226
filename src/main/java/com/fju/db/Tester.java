@@ -1,5 +1,7 @@
 package com.fju.db;
 
+import com.fju.Input;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
